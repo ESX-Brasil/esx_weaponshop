@@ -1,3 +1,7 @@
+--       Licensed under: AGPLv3        --
+--  GNU AFFERO GENERAL PUBLIC LICENSE  --
+--     Version 1.1.1, 15/05/2019     --
+
 local Keys = {
 	["ESC"] = 322, ["F1"] = 288, ["F2"] = 289, ["F3"] = 170, ["F5"] = 166, ["F6"] = 167, ["F7"] = 168, ["F8"] = 169, ["F9"] = 56, ["F10"] = 57,
 	["~"] = 243, ["1"] = 157, ["2"] = 158, ["3"] = 160, ["4"] = 164, ["5"] = 165, ["6"] = 159, ["7"] = 161, ["8"] = 162, ["9"] = 163, ["-"] = 84, ["="] = 83, ["BACKSPACE"] = 177,
@@ -124,7 +128,7 @@ function DisplayBoughtScaleform(weaponName, price)
 		while sec > 0 do
 			Citizen.Wait(0)
 			sec = sec - 0.01
-	
+
 			DrawScaleformMovieFullscreen(scaleform, 255, 255, 255, 255)
 		end
 	end)
@@ -207,7 +211,7 @@ Citizen.CreateThread(function()
 			HasAlreadyEnteredMarker = true
 			TriggerEvent('esx_weaponshop:hasEnteredMarker', currentZone)
 		end
-		
+
 		if not isInMarker and HasAlreadyEnteredMarker then
 			HasAlreadyEnteredMarker = false
 			TriggerEvent('esx_weaponshop:hasExitedMarker', LastZone)

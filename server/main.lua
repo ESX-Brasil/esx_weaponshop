@@ -1,3 +1,7 @@
+--       Licensed under: AGPLv3        --
+--  GNU AFFERO GENERAL PUBLIC LICENSE  --
+--     Version 1.1.1, 15/05/2019     --
+
 ESX = nil
 local shopItems = {}
 
@@ -78,7 +82,7 @@ ESX.RegisterServerCallback('esx_weaponshop:buyWeapon', function(source, cb, weap
 				TriggerClientEvent('esx:showNotification', source, _U('not_enough'))
 				cb(false)
 			end
-	
+
 		end
 	end
 end)
