@@ -7,7 +7,7 @@ Config.Type          = 1
 
 Config.Locale        = 'br'
 
-Config.LicenseEnable = false -- only turn this on if you are using esx_license
+Config.LicenseEnable = true -- only turn this on if you are using esx_license
 Config.LicensePrice  = 5000
 
 Config.Zones = {

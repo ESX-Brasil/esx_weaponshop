@@ -1,7 +1,3 @@
---       Licensed under: AGPLv3        --
---  GNU AFFERO GENERAL PUBLIC LICENSE  --
---     Version 1.1.1, 15/05/2019     --
-
 ESX = nil
 local shopItems = {}
 
